@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="503.0" style="-fx-border-color: #720000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddPrescriptionController">
+   <children>
+      <Label layoutX="176.0" layoutY="242.0" text="Add a prescription" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="295.0" text="Patient's ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patID" layoutX="202.0" layoutY="292.0" prefHeight="25.0" prefWidth="208.0" />
+      <Button layoutX="379.0" layoutY="437.0" mnemonicParsing="false" onAction="#addPrescriptionHandler" text="Add" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="440.0" layoutY="455.0" mnemonicParsing="false" onAction="#cancelAddPrescriptionHandler" text="Cancel" />
+      <TextArea fx:id="description" layoutX="202.0" layoutY="331.0" prefHeight="55.0" prefWidth="208.0" />
+      <Label layoutX="35.0" layoutY="349.0" text="Description">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="405.0" text="Total Cost">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalCost" layoutX="202.0" layoutY="402.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="status" alignment="CENTER" editable="false" layoutX="12.0" layoutY="452.0" prefHeight="25.0" prefWidth="208.0" promptText="Status" />
+      <Label layoutX="228.0" layoutY="14.0" text="Patients" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="patientsTable" layoutX="12.0" layoutY="45.0" prefHeight="168.0" prefWidth="479.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+      <Line endX="100.0" layoutX="251.0" layoutY="230.0" scaleX="1.7" startX="-100.0" stroke="#700000" />
+   </children>
+</AnchorPane>

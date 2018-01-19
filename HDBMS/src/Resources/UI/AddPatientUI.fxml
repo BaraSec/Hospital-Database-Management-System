@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="503.0" style="-fx-border-color: #720000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddPatientController">
+   <children>
+      <Label layoutX="194.0" layoutY="21.0" text="Add a patient" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="162.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="205.0" text="Date of birth">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="385.0" layoutY="430.0" mnemonicParsing="false" onAction="#addPatientHandler" text="Add" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="448.0" mnemonicParsing="false" onAction="#cancelAddPatientHandler" text="Cancel" />
+      <ChoiceBox fx:id="genderBox" layoutX="199.0" layoutY="159.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="32.0" layoutY="78.0" text="Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="199.0" layoutY="75.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="33.0" layoutY="245.0" text="Phone number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneNumber" layoutX="200.0" layoutY="242.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="33.0" layoutY="287.0" text="Address:" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="396.0" text="City">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cityBox" layoutX="200.0" layoutY="393.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="33.0" layoutY="319.0" text="Street">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="street" layoutX="200.0" layoutY="316.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="33.0" layoutY="358.0" text="Building">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="building" layoutX="200.0" layoutY="355.0" prefHeight="25.0" prefWidth="208.0" />
+      <JFXDatePicker fx:id="dob" layoutX="200.0" layoutY="202.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="status" alignment="CENTER" editable="false" layoutX="15.0" layoutY="453.0" prefHeight="25.0" prefWidth="268.0" promptText="Status" />
+      <Label layoutX="32.0" layoutY="116.0" text="ID Number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDnum" layoutX="199.0" layoutY="113.0" prefHeight="25.0" prefWidth="208.0" />
+   </children>
+</AnchorPane>

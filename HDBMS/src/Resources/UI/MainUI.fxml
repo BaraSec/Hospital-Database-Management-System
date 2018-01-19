@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <children>
+      <MenuBar prefHeight="20.0" prefWidth="582.0">
+         <menus>
+            <Menu fx:id="AccountMenu" mnemonicParsing="false" text="Account">
+              <items>
+                <MenuItem fx:id="updatePassword" mnemonicParsing="false" onAction="#updatePasswordHandler" text="Update my password" />
+                <MenuItem mnemonicParsing="false" onAction="#signOut" text="Sign out" />
+              </items>
+            </Menu>
+            <Menu fx:id="personalMenu" mnemonicParsing="false" text="Personal">
+              <items>
+                  <MenuItem fx:id="listMyData" mnemonicParsing="false" onAction="#listMyDataHandler" text="List my data" />
+              </items>
+            </Menu>
+            <Menu fx:id="appointmentsMenu" mnemonicParsing="false" text="Appointments">
+              <items>
+                <MenuItem fx:id="listAppointments" mnemonicParsing="false" onAction="#listAppointmentsHandler" text="List Appointments" />
+                  <MenuItem fx:id="addAppointment" mnemonicParsing="false" onAction="#addAppointmentHandler" text="Add an appointment" />
+              </items>
+            </Menu>
+            <Menu fx:id="patientsMenu" mnemonicParsing="false" text="Patients">
+              <items>
+                <MenuItem fx:id="listPatients" mnemonicParsing="false" onAction="#listPatientsHandler" text="List patients" />
+                  <MenuItem fx:id="addPatient" mnemonicParsing="false" onAction="#addPatientHandler" text="Add a patient" />
+                  <MenuItem fx:id="listPatientPrescriptionHistory" mnemonicParsing="false" onAction="#listPatientPrescriptionHistoryHandler" text="List a patient's prescription history" />
+              </items>
+            </Menu>
+            <Menu fx:id="prescriptionsMenu" mnemonicParsing="false" text="Prescriptions">
+              <items>
+                <MenuItem fx:id="listPrescriptions" mnemonicParsing="false" onAction="#listPrescriptionsHandler" text="List prescriptions" />
+                  <MenuItem fx:id="addPrescription" mnemonicParsing="false" onAction="#addPrescriptionHandler" text="Add a prescription" />
+              </items>
+            </Menu>
+            <Menu fx:id="employeesMenu" mnemonicParsing="false" text="Employees">
+              <items>
+                <MenuItem fx:id="avEpOp" mnemonicParsing="false" onAction="#openEmployeesWorld" text="Available Operations" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Line disable="true" endX="100.0" layoutX="292.0" layoutY="259.0" opacity="0.66" scaleX="3.0" startX="-100.0" strokeMiterLimit="30.0" />
+      <Label layoutX="345.0" layoutY="340.0" text="Street">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="393.0" text="City">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="340.0" text="Building ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="180.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="140.0" text="Date of birth">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="99.0" text="Phone number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="180.0" text="Salary">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="140.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="99.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="41.0" text="My Info" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="building" editable="false" layoutX="94.0" layoutY="336.0" />
+      <TextField fx:id="city" editable="false" layoutX="242.0" layoutY="389.0" />
+      <TextField fx:id="street" editable="false" layoutX="403.0" layoutY="336.0" />
+      <TextField fx:id="uname" editable="false" layoutX="403.0" layoutY="176.0" />
+      <TextField fx:id="dob" editable="false" layoutX="403.0" layoutY="136.0" />
+      <TextField fx:id="phoneNum" editable="false" layoutX="403.0" layoutY="95.0" />
+      <TextField fx:id="salary" editable="false" layoutX="94.0" layoutY="176.0" />
+      <TextField fx:id="gender" editable="false" layoutX="93.0" layoutY="136.0" />
+      <TextField fx:id="name" editable="false" layoutX="93.0" layoutY="95.0" />
+      <Label layoutX="256.0" layoutY="281.0" text="My Address" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="219.0" text="ID Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDnum" editable="false" layoutX="262.0" layoutY="215.0" />
+   </children>
+</AnchorPane>

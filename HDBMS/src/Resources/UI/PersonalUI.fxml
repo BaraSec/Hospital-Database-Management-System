@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PersonalController">
+   <children>
+      <Label layoutX="219.0" layoutY="18.0" text="My Appointments" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="662.0" mnemonicParsing="false" onAction="#closePersonalHandler" text="close" />
+      <TableView fx:id="myAppointmentsTable" layoutX="20.0" layoutY="49.0" prefHeight="168.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+      <Label layoutX="247.0" layoutY="232.0" text="My Patients" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="449.0" text="My Prescriptions" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="myPrescriptionsTable" layoutX="16.0" layoutY="482.0" prefHeight="168.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+      <TableView fx:id="myPatientsTable" layoutX="21.0" layoutY="265.0" prefHeight="168.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

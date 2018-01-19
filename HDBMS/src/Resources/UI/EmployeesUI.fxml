@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="853.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EmployeesController">
+   <children>
+      <Label layoutX="505.0" layoutY="14.0" text="Employees List" textFill="#700000" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="505.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="303.0" text="Add an employee" textFill="#700000" AnchorPane.leftAnchor="496.0" AnchorPane.rightAnchor="495.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1053.0" layoutY="744.0" mnemonicParsing="false" onAction="#closeEmployeesWorld" text="close" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="260.0" layoutY="533.0" text="Find a" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eID" layoutX="472.0" layoutY="530.0" prefHeight="25.0" prefWidth="103.0" text="" />
+      <Button fx:id="deleteAccount" layoutX="745.0" layoutY="530.0" mnemonicParsing="false" onAction="#deleteAccount" text="Delete Account" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="status" alignment="CENTER" editable="false" layoutX="383.0" layoutY="827.0" prefHeight="25.0" prefWidth="229.0" text="Status" AnchorPane.leftAnchor="383.0" AnchorPane.rightAnchor="382.0" />
+      <Line disable="true" endX="100.0" layoutX="556.0" layoutY="505.0" opacity="0.66" scaleX="3.0" startX="-100.0" stroke="#700000" strokeMiterLimit="30.0" AnchorPane.leftAnchor="455.5" AnchorPane.rightAnchor="450.5" />
+      <Button layoutX="847.0" layoutY="456.0" mnemonicParsing="false" onAction="#addEmployee" text="Add" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="658.0" layoutY="460.0" text="Salary">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="343.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aName" layoutX="264.0" layoutY="339.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <TableView fx:id="employeesTable" layoutX="18.0" layoutY="46.0" prefHeight="244.0" prefWidth="1071.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+      <Button fx:id="updateInfo" layoutX="650.0" layoutY="530.0" mnemonicParsing="false" onAction="#updateInfo" text="Update info" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="214.0" layoutY="343.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="aGender" layoutX="451.0" layoutY="339.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="587.0" layoutY="343.0" text="Date of birth">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="aDOB" layoutX="676.0" layoutY="338.0" prefHeight="25.0" prefWidth="165.0" AnchorPane.rightAnchor="266.0" />
+      <TextField fx:id="aUname" layoutX="264.0" layoutY="378.0" prefHeight="25.0" prefWidth="113.0" text="" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="730.0" />
+      <Label layoutX="191.0" layoutY="382.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="382.0" text="Role">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="aRole" layoutX="451.0" layoutY="378.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="588.0" layoutY="382.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aSalary" layoutX="706.0" layoutY="456.0" prefHeight="25.0" prefWidth="113.0" text="" AnchorPane.rightAnchor="291.0" />
+      <Label layoutX="410.0" layoutY="460.0" text="Phone number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aPhoneNumber" layoutX="507.0" layoutY="456.0" prefHeight="25.0" prefWidth="125.0" text="" />
+      <Label layoutX="399.0" layoutY="420.0" text="City">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="aCity" layoutX="451.0" layoutY="416.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="589.0" layoutY="420.0" text="Building">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aBuilding" layoutX="676.0" layoutY="416.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="214.0" layoutY="420.0" text="Street" AnchorPane.rightAnchor="863.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aStreet" layoutX="264.0" layoutY="416.0" prefHeight="25.0" prefWidth="113.0" text="" AnchorPane.rightAnchor="730.0" />
+      <Button fx:id="findEmployee" layoutX="593.0" layoutY="530.0" mnemonicParsing="false" onAction="#findEmployee" text="Find" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="656.0" layoutY="692.0" text="Salary">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="576.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uName" layoutX="264.0" layoutY="572.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="214.0" layoutY="576.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="587.0" layoutY="576.0" text="Date of birth">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="uDOB" layoutX="676.0" layoutY="571.0" prefHeight="25.0" prefWidth="165.0" AnchorPane.rightAnchor="266.0" />
+      <TextField fx:id="uUname" layoutX="264.0" layoutY="611.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="191.0" layoutY="615.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="615.0" text="Role">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="615.0" text="New password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uSalary" layoutX="703.0" layoutY="688.0" prefHeight="25.0" prefWidth="113.0" text="" AnchorPane.rightAnchor="291.0" />
+      <Label layoutX="408.0" layoutY="692.0" text="Phone number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uPhoneNumber" layoutX="506.0" layoutY="688.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="399.0" layoutY="653.0" text="City">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="uCity" layoutX="451.0" layoutY="649.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="589.0" layoutY="653.0" text="Building">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uBuilding" layoutX="676.0" layoutY="649.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="214.0" layoutY="653.0" text="Street">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uStreet" layoutX="264.0" layoutY="649.0" prefHeight="25.0" prefWidth="113.0" text="" AnchorPane.rightAnchor="730.0" />
+      <Label layoutX="213.0" layoutY="460.0" text="ID number" AnchorPane.rightAnchor="881.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="808.0" layoutY="382.0" text="Retype it:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aID" layoutX="243.0" layoutY="456.0" prefHeight="25.0" prefWidth="134.0" text="" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="730.0" />
+      <Label layoutX="411.0" layoutY="535.0" text="with eID:" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="eType" layoutX="307.0" layoutY="530.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextField fx:id="uID" layoutX="244.0" layoutY="688.0" prefHeight="25.0" prefWidth="134.0" text="" AnchorPane.rightAnchor="730.0" />
+      <Line disable="true" endX="100.0" layoutX="562.0" layoutY="730.0" opacity="0.66" scaleX="3.0" startX="-100.0" stroke="#700000" strokeMiterLimit="30.0" />
+      <PasswordField fx:id="aPassword" layoutX="676.0" layoutY="378.0" prefHeight="25.0" prefWidth="113.0" />
+      <PasswordField fx:id="aREPassword" layoutX="867.0" layoutY="378.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="816.0" layoutY="615.0" text="Retype it:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="uREPassword" layoutX="875.0" layoutY="611.0" prefHeight="25.0" prefWidth="113.0" />
+      <PasswordField fx:id="uPassword" layoutX="689.0" layoutY="611.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="uRole" editable="false" layoutX="450.0" layoutY="611.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <TextField fx:id="uGender" editable="false" layoutX="449.0" layoutY="572.0" prefHeight="25.0" prefWidth="113.0" text="" />
+      <Label layoutX="324.0" layoutY="770.0" text="Number of Managers">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="568.0" layoutY="770.0" text="Number of Doctors" AnchorPane.leftAnchor="568.0" AnchorPane.rightAnchor="420.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalSecrsN" editable="false" layoutX="946.0" layoutY="765.0" prefHeight="25.0" prefWidth="73.0" text="" AnchorPane.leftAnchor="946.0" AnchorPane.rightAnchor="88.0" />
+      <Label layoutX="801.0" layoutY="770.0" text="Number of Secretaries">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalMngrsN" editable="false" layoutX="462.0" layoutY="767.0" prefHeight="25.0" prefWidth="73.0" text="" />
+      <TextField fx:id="totalDocsN" editable="false" layoutX="694.0" layoutY="767.0" prefHeight="25.0" prefWidth="73.0" text="" AnchorPane.leftAnchor="694.0" AnchorPane.rightAnchor="340.0" />
+      <Label layoutX="438.0" layoutY="743.0" text="Number of total Employees" textFill="#700000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalEmpsN" editable="false" layoutX="617.0" layoutY="740.0" prefHeight="25.0" prefWidth="73.0" text="" />
+      <Line disable="true" endX="100.0" layoutX="564.0" layoutY="808.0" opacity="0.66" scaleX="2.0" startX="-100.0" stroke="#700000" strokeMiterLimit="30.0" />
+      <Label layoutX="170.0" layoutY="692.0" text="ID number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="770.0" text="Number of Patients" AnchorPane.leftAnchor="91.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalPatsN" editable="false" layoutX="219.0" layoutY="767.0" prefHeight="25.0" prefWidth="73.0" text="" AnchorPane.leftAnchor="219.0" />
+   </children>
+</AnchorPane>
