@@ -12,7 +12,7 @@ The ERD, UML, initial crediantels to login to the system, and a Database backup 
 1. Core Database API implemented.
 2. Soft-deletion implemented - Nothing get deleted from the database - history-friendly.
 3. Follows programming's and OOP's best practices.
-4. Multiple user types with different privileges implemented.
+4. Multiple user types with different access privileges implemented.
 5. Exceptions handled carefully.
 6. All TableViews (in the GUI) span AT LEAST 2 HDBMS tables.
 7. Material design Login Window.
@@ -39,3 +39,44 @@ The ERD, UML, initial crediantels to login to the system, and a Database backup 
 1. Prepared Statements used, to improve performance, and prevent SQL Injection attacks.
 2. Passwords get SHA384-hashed before entering the database (I know it's not that of a secure move, but it's only to repsresent that it must be there, using a better hashing technique of course, in a real world DBMS).
 3. Accepted passwords format: "Password must have at least 9 characters [ 1 lowercase letter, 1 uppercase letter, and 1 digit are a MUST ]".
+
+
+
+* Screenshots of the ERD, UML, and _VERY FEW_ of the application's windows/functionalities:
+
+
+ERD:
+![ERD.jpg](https://i.imgur.com/hMJnB4H.jpg)
+
+
+UML:
+![UML.jpg](https://i.imgur.com/JHyxfAZ.jpg)
+
+
+Login Screen:
+
+![LoginScreen.jpg](https://i.imgur.com/mgf128h.jpg)
+
+
+Manager's window (it differs depending on the account type, and privileges):
+![Manager'sWindow.jpg](https://i.imgur.com/RVh43Qr.jpg)
+
+Managing the employees' accounts' windows:
+![ListPatients.jpg](https://i.imgur.com/ENuOuVK.jpg)
+
+List patients' window:
+![ListPatients.jpg](https://i.imgur.com/tXYuEwZ.jpg)
+
+Update the account's password easily:
+
+![ListPatients.jpg](https://i.imgur.com/3TeAEWL.jpg)
+
+A window only available to the doctors, displays each personal medical records:
+![ListPatients.jpg](https://i.imgur.com/ldR2Zx7.jpg)
+
+Adding a prescription's window:
+
+![ListPatients.jpg](https://i.imgur.com/Eu6BdW6.jpg)
+
+Adding an appointment's window:
+![ListPatients.jpg](https://i.imgur.com/nwPo3H0.jpg)
