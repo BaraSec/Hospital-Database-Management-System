@@ -1,10 +1,11 @@
 # Hospital-Database-Management-System
 
-This was my solution to a Database course's project in a CS Bachelor program I am pursuing. I chose to build a hospital database management system, implemented in MySql and Java. It ended to be much smaller than an actual hospital, but in the same time, much more than the intructor asked for.
+This was my solution to a Database course's project in a CS Bachelor program I am pursuing. I chose to build a hospital database management system, implemented in MySql and Java. It ended to be much smaller than what an actual hospital needs, but in the same time, much more than what the intructor asked for.
 
-The ERD is available at `a`, UML at `b`, the script I used to fill (generate data) the database tables automatically at `c`, the initial crediantels to login to the system at `d`, Database backup (with creation instructions) that can be imported to MySql at `e`.
+The ERD, UML, initial crediantels to login to the system, and a Database backup (with creation instructions) that can be imported to MySql are available under `HDBMS/src/HDBMS-Info/`, and the script I used to fill the database tables automatically (with auto-generate data) is available under `DataScript`.
 
---> Note:  You need to enter your MySql server's username and password in the DatabaseAPI class(es), at `HDBMS/src/DatabaseAPI/DatabaseHandler.java`, the same at `DataScript/src/DatabaseHandler.java`.
+--> Note:  You need to enter your MySql server's username and password in the DatabaseAPI class(es), at `HDBMS/src/DatabaseAPI/DatabaseHandler.java`, the same thing applies at `DataScript/src/DatabaseHandler.java`.
+
 
 * Features summary (listed the ones that may not be so obvious): 
 
