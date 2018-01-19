@@ -1,0 +1,15 @@
+
+*Managers:
+manSalem : Salem1970=
+lamar1979 : bestIsLamar11
+bobino : bobManager0312
+
+*Doctors:
+ahmad1972 : Ahmad1970=
+rana1989 : rana1989R=
+alex1983 : alex1983A=
+sama1990 : sama1990S=
+
+*Secretaries:
+secSari : Sari1991+
+luna1992 : Luna1992+
