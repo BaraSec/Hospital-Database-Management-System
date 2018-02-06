@@ -2,9 +2,9 @@
 
 This was my solution to a Database course's project in a CS Bachelor program I am pursuing. I chose to build a hospital database management system, implemented in MySql and Java. It ended to be much smaller than what an actual hospital needs, but in the same time, much more than what the intructor asked for.
 
-The ERD, UML, initial crediantels to login to the system, and a Database backup (with creation instructions) that can be imported to MySql are available under `HDBMS/src/HDBMS-Info/`, and the script I used to fill the database tables automatically (with auto-generate data) is available under `DataScript`.
+The ERD, UML, initial crediantels to login to the system, and a Database backup (with schema creation instructions) that can be imported to MySql are available under `HDBMS/src/HDBMS-Info/`, and the script I used to fill the database tables automatically (with auto-generated data) is available under `DataScript`.
 
---> Note:  You need to enter your MySql server's username and password in the DatabaseAPI class(es), at `HDBMS/src/DatabaseAPI/DatabaseHandler.java`, the same thing applies at `DataScript/src/DatabaseHandler.java`.
+--> Note:  You need to enter your MySql server's username and password in the DatabaseAPI class(es), at `HDBMS/src/DatabaseAPI/DatabaseHandler.java`, the same thing applies at `DataScript/src/DatabaseHandler.java`. Also the external libraries need to be imported before the first run of the software.
 
 
 * Features summary (listed the ones that may not be so obvious): 
@@ -20,20 +20,20 @@ The ERD, UML, initial crediantels to login to the system, and a Database backup 
 9. Achieves each user's type's best needs, easy to use, and functional.
 10. Offers a "Status" bar at the bottom of nearly each GUI window, to inform the user of the result of their requested operations (queries).
 11. Uses a special icon for each GUI.
-12. For all input fields' groups, it checks if ALL of them are filled with correct-format data at first, such as:
-	A. Patient/Employee's name: 3 characters long at least, all of them are letters
-	B. Patient/Employee's ID: 7 characters long at least, all of them are numbers
-	C. Patient/Employee's birthdate: can't be from the future
-	D. Patient/Employee's phone number: 7 characters long at least, all of them are numbers
-	E. Appointment's Date and Time can't be from the past
-	F. Checks for patient's patID existence before adding the appointment (or prescription)
-	G. Checks if a time slot is free before adding an appointment into it
-	H. Checks if a prescription's cost is in a valid positive numeric format before adding it to the records
-	I. Employee's username: 5 characters long at least, must have 1 letter out of them at minimum, only letters and numbers allowed
-	J. Checks if a new employee's username already exists at first before adding it
-	K. Checks if the password and re-password match
-	L. Employee's salary: must have a valid positive numeric value
-	M. Adds a new address only if it's unique, otherwise it gets the existing address's adrID
+12. For all input fields' groups, it checks if ALL of them are filled with correct-format data at first, such as:<br />
+	A. Patient/Employee's name: 3 characters long at least, all of them are letters<br />
+	B. Patient/Employee's ID: 7 characters long at least, all of them are numbers<br />
+	C. Patient/Employee's birthdate: can't be from the future<br />
+	D. Patient/Employee's phone number: 7 characters long at least, all of them are numbers<br />
+	E. Appointment's Date and Time can't be from the past<br />
+	F. Checks for patient's patID existence before adding the appointment (or prescription)<br />
+	G. Checks if a time slot is free before adding an appointment into it<br />
+	H. Checks if a prescription's cost is in a valid positive numeric format before adding it to the records<br />
+	I. Employee's username: 5 characters long at least, must have 1 letter out of them at minimum, only letters and numbers allowed<br />
+	J. Checks if a new employee's username already exists at first before adding it<br />
+	K. Checks if the password and re-password match<br />
+	L. Employee's salary: must have a valid positive numeric value<br />
+	M. Adds a new address only if it's unique, otherwise it gets the existing address's adrID<br />
 
 *Security-Oriented:
 1. Prepared Statements used, to improve performance, and prevent SQL Injection attacks.
