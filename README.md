@@ -6,6 +6,7 @@ The ERD, UML, initial crediantels to login to the system, and a Database backup 
 
 --> Note:  You need to enter your MySql server's username and password in the DatabaseAPI class(es), at `HDBMS/src/DatabaseAPI/DatabaseHandler.java`, the same thing applies at `DataScript/src/DatabaseHandler.java`. Also the external libraries need to be imported before the first run of the software.
 
+------------------------------------------------------------
 
 * Features summary (listed the ones that may not be so obvious): 
 
@@ -40,6 +41,8 @@ The ERD, UML, initial crediantels to login to the system, and a Database backup 
 2. Passwords get SHA384-hashed before entering the database (I know it's not that of a secure move, but it's only to repsresent that it must be there, using a better hashing technique of course, in a real world DBMS).
 3. Accepted passwords format: "Password must have at least 9 characters [ 1 lowercase letter, 1 uppercase letter, and 1 digit are a MUST ]".
 
+
+------------------------------------------------------------
 
 
 * Screenshots of the ERD, UML, and _VERY FEW_ of the application's windows/functionalities:
